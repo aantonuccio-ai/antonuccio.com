@@ -50,6 +50,7 @@ nav {
 .nav-logo img {
     height: 120px;
     width: auto;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) brightness(1.2);
 }
 
 .nav-logo-text {
