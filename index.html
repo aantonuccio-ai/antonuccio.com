@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonuccio Family</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-wrapper">
+            <video id="familyVideo" autoplay muted loop playsinline>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="content">
+            <h1 class="family-name">The Antonuccio Family</h1>
+            <div class="subtitle">In 1972</div>
+        </div>
+
+        <div class="video-controls">
+            <button id="prevBtn" class="control-btn" aria-label="Previous video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div id="videoIndicators" class="indicators"></div>
+            <button id="nextBtn" class="control-btn" aria-label="Next video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

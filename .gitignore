@@ -1,0 +1,18 @@
+# Videos (large files - can be uploaded separately or via Git LFS)
+videos/*.mp4
+videos/*.mov
+videos/*.avi
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Optional: Keep the videos directory structure
+!videos/.gitkeep
