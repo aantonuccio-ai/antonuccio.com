@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Antonuccio Family</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Antonuccio Family Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="gallery-page">
+        <div class="gallery-header">
+            <h1>Family Gallery</h1>
+            <p>Our memories organized by year and theme</p>
+        </div>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="year">By Year</button>
+            <button class="filter-btn" data-filter="theme">By Theme</button>
+        </div>
+
+        <!-- Gallery organized by Year -->
+        <section class="gallery-section year-section" data-category="year">
+            <h2 class="section-title">By Year</h2>
+
+            <div class="year-group">
+                <h3 class="year-title">2024</h3>
+                <div class="media-grid">
+                    <div class="media-item video-item" data-year="2024">
+                        <video src="gallery/2024/sample-video.mp4" controls></video>
+                        <div class="media-caption">Family Vacation 2024</div>
+                    </div>
+                    <div class="media-item photo-item" data-year="2024">
+                        <img src="gallery/2024/sample-photo1.jpg" alt="Family Photo 2024" loading="lazy">
+                        <div class="media-caption">Summer Gathering</div>
+                    </div>
+                    <div class="media-item photo-item" data-year="2024">
+                        <img src="gallery/2024/sample-photo2.jpg" alt="Family Photo 2024" loading="lazy">
+                        <div class="media-caption">Holiday Celebration</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="year-group">
+                <h3 class="year-title">2023</h3>
+                <div class="media-grid">
+                    <div class="media-item photo-item" data-year="2023">
+                        <img src="gallery/2023/sample-photo1.jpg" alt="Family Photo 2023" loading="lazy">
+                        <div class="media-caption">Spring Trip</div>
+                    </div>
+                    <div class="media-item video-item" data-year="2023">
+                        <video src="gallery/2023/sample-video.mp4" controls></video>
+                        <div class="media-caption">Birthday Party</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="year-group">
+                <h3 class="year-title">2022</h3>
+                <div class="media-grid">
+                    <div class="media-item photo-item" data-year="2022">
+                        <img src="gallery/2022/sample-photo1.jpg" alt="Family Photo 2022" loading="lazy">
+                        <div class="media-caption">Family Reunion</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery organized by Theme -->
+        <section class="gallery-section theme-section" data-category="theme">
+            <h2 class="section-title">By Theme</h2>
+
+            <div class="theme-group">
+                <h3 class="theme-title">Vacations</h3>
+                <div class="media-grid">
+                    <div class="media-item video-item" data-theme="vacations">
+                        <video src="gallery/themes/vacations/beach-trip.mp4" controls></video>
+                        <div class="media-caption">Beach Trip</div>
+                    </div>
+                    <div class="media-item photo-item" data-theme="vacations">
+                        <img src="gallery/themes/vacations/mountains.jpg" alt="Mountain Vacation" loading="lazy">
+                        <div class="media-caption">Mountain Getaway</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-group">
+                <h3 class="theme-title">Celebrations</h3>
+                <div class="media-grid">
+                    <div class="media-item photo-item" data-theme="celebrations">
+                        <img src="gallery/themes/celebrations/birthday.jpg" alt="Birthday Party" loading="lazy">
+                        <div class="media-caption">Birthday Celebration</div>
+                    </div>
+                    <div class="media-item video-item" data-theme="celebrations">
+                        <video src="gallery/themes/celebrations/wedding.mp4" controls></video>
+                        <div class="media-caption">Wedding</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-group">
+                <h3 class="theme-title">Holidays</h3>
+                <div class="media-grid">
+                    <div class="media-item photo-item" data-theme="holidays">
+                        <img src="gallery/themes/holidays/christmas.jpg" alt="Christmas" loading="lazy">
+                        <div class="media-caption">Christmas 2023</div>
+                    </div>
+                    <div class="media-item photo-item" data-theme="holidays">
+                        <img src="gallery/themes/holidays/thanksgiving.jpg" alt="Thanksgiving" loading="lazy">
+                        <div class="media-caption">Thanksgiving Dinner</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-group">
+                <h3 class="theme-title">Family Portraits</h3>
+                <div class="media-grid">
+                    <div class="media-item photo-item" data-theme="portraits">
+                        <img src="gallery/themes/portraits/family-2024.jpg" alt="Family Portrait" loading="lazy">
+                        <div class="media-caption">Family Portrait 2024</div>
+                    </div>
+                    <div class="media-item photo-item" data-theme="portraits">
+                        <img src="gallery/themes/portraits/family-2023.jpg" alt="Family Portrait" loading="lazy">
+                        <div class="media-caption">Family Portrait 2023</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <video id="lightbox-video" controls></video>
+        </div>
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
