@@ -50,10 +50,6 @@ nav {
 .nav-logo img {
     height: 120px;
     width: auto;
-    border-radius: 8px;
-    background: white;
-    padding: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .nav-logo-text {
@@ -525,7 +521,6 @@ nav a.active {
 
     .nav-logo img {
         height: 96px;
-        padding: 6px;
     }
 
     .nav-logo-main {
